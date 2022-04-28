@@ -93,6 +93,7 @@ Hacer refresh en esta pagina deberia mostrar las diferentes IP Internas de los s
 - Cambiar configuración de Elastic (Classic) Load Balancer (ELB) a Application Load Balancer (ALB).
 - Agregar capacidad HTTPS al Load Balancer.
 - Realizar configuración básica DNS con Route 53.
+- Reglas de security_group mas granulares y restrictivas sólo a las IPs necesarias.
 
 # Licencia
 
