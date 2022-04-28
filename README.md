@@ -1,4 +1,4 @@
-# Infraestructura Two-Tier para AWS
+# Infraestructura 2 Tier para AWS
 
 [![made-with-terraform](https://img.shields.io/badge/Made%20with-Terraform%20v1.1.9-1f425f.svg?logo=terraform)](https://www.terraform.io)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
