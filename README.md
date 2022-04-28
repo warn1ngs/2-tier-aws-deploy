@@ -74,6 +74,8 @@ Una vez enviado el comando a Terraform de aplicar dicha infraestructura, la sali
 * __web-server-ids :__ IDs de cada servidor web
 * __web-server-private-ip :__ IP Privadas de cada servidor Web
 * __web-server-public-ip :__ IP Públicas de cada servidor Web
+* __db-master-endpoint :__ Nombre DNS del servidor Principal de Base de Datos.
+* __db-slave-endpoint :__ Nombre DNS del servidor Replica de Base de Datos.
 
 ### Ejemplo al ingresar a la dirección del ELB
 Hacer refresh en esta pagina deberia mostrar las diferentes IP Internas de los servidores web.
