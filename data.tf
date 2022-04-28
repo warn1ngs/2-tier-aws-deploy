@@ -96,8 +96,3 @@ data "aws_security_group" "sg-database" {
 data "aws_vpc" "vpc-principal" {
   id = aws_vpc.vpc-principal.id
 }
-
-#Prueba
-#data "aws_eip" "eip-publicas" {
-#  id = aws_eip.eip_publicas.*.id
-#}
