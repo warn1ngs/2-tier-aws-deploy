@@ -1,0 +1,11 @@
+/.terraform.lock.hcl
+/.terraform/
+/terraform.tfstate
+/terraform.tfstate.backup
+/.idea/2-tier-aws-deploy.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/

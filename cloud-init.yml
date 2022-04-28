@@ -1,0 +1,39 @@
+#cloud-config
+#Logging
+output:
+  all: ">> /var/log/cloud-init.log"
+
+#Configuraciones iniciales del sistema
+ssh_pwauth: True
+timezone: America/Argentina/Mendoza
+ntp:
+  enabled: true
+  ntp_client: auto
+
+#Usuario Default
+users:
+  - name: ${username}
+    primary_group: ${username}
+    groups: [users, sudo]
+    gecos: Ricardo.Rios
+    lock_passwd: false
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    passwd: ${passwd}
+    shell: /bin/bash
+
+#Paquetes a instalar y actualizaciones
+package_update: true
+package_upgrade: true
+package_reboot_if_required: false
+packages:
+  - mc
+  - nmap
+  - iptraf-ng
+  - apache2
+  - php
+  - php-common
+  - git
+
+runcmd:
+  - rm /var/www/html/index.html
+  - git clone https://github.com/zhangsean/hello-web.git /var/www/html/
