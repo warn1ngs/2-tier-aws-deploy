@@ -33,18 +33,12 @@ output "bast-server-public-ip" {
   value       = aws_instance.bastion-host.*.public_ip
 }
 
+output "db_master_endpoint" {
+  value       = aws_db_instance.db-master.endpoint
+  description = "The DB endpoint name."
+}
 
-
-#output "test-local" {
-#  value = local.ip_privadas
-#}
-
-#output "db_master_endpoint" {
-#  value       = aws_db_instance.db-master.endpoint
-#  description = "The DB endpoint name."
-#}
-#
-#output "db_slave_endpoint" {
-#  value       = aws_db_instance.db-slave.address
-#  description = "The DB address."
-#}
+output "db_slave_endpoint" {
+  value       = aws_db_instance.db-slave.address
+  description = "The DB address."
+}
