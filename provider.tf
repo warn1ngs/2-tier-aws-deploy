@@ -10,6 +10,6 @@ terraform {
 
 #Configurando el Auth y Region a usar.
 provider "aws" {
-  profile = "default"
+  profile = "terraform-priv"
   region  = "us-east-1"
 }
